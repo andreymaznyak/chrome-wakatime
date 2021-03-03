@@ -169,7 +169,6 @@ var Options = reactCreateClass({
             >
               {alert()}
             </ReactCSSTransitionGroup>
-
             <form className="form-horizontal" onSubmit={this._handleSubmit}>
               <div className="form-group">
                 <label className="col-lg-2 control-label">Logging style</label>
@@ -210,6 +209,43 @@ var Options = reactCreateClass({
                     <option value="light">Light</option>
                     <option value="dark">Dark</option>
                   </select>
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="backend" className="col-lg-2 control-label">Backend</label>
+                <div className="col-lg-10">
+                  <select className="form-control" ref="backend" defaultValue="default">
+                    <option value="default">Default</option>
+                    <option value="custom">Custom</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="baseUrl" className="col-lg-2 control-label">Custom backend url</label>
+                <div className="col-lg-10">
+                  <input
+                      className="form-control"
+                      ref="baseUrl"
+                      // onChange={this._handleChange}
+                      // placeholder={this.props.placeholder}
+                      // value={this.props.sites}
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="token" className="col-lg-2 control-label">Custom backend token</label>
+                <div className="col-lg-10">
+                  <input
+                      className="form-control"
+                      ref="token"
+                      type="password"
+                      // onChange={this._handleChange}
+                      // placeholder={this.props.placeholder}
+                      // value={this.props.sites}
+                  />
                 </div>
               </div>
 
